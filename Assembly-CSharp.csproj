@@ -36,13 +36,19 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Wizard - 2D Character\Demo\SimplePlayerController.cs" />
      <Compile Include="Assets\Wizard - 2D Character\Demo\WizDemo1.cs" />
+     <Compile Include="Assets\src\Enemy.cs" />
      <Compile Include="Assets\src\Jump.cs" />
+     <Compile Include="Assets\src\Message.cs" />
+     <Compile Include="Assets\src\Player.cs" />
+     <Compile Include="Assets\src\PlayerController.cs" />
      <Compile Include="Assets\src\UIManager.cs" />
      <Compile Include="Assets\src\face.cs" />
+     <Compile Include="Assets\src\lookat.cs" />
+     <Compile Include="Assets\src\menu.cs" />
      <Compile Include="Assets\src\skip.cs" />
      <Compile Include="Assets\src\teleportGate.cs" />
+     <Compile Include="Assets\teleportGate2.cs" />
      <None Include="Assets\map\Graphics\Tilesets\World_A2.txt" />
      <None Include="Assets\map\Graphics\Tilesets\Inside_A4.txt" />
      <None Include="Assets\map\Graphics\Tilesets\Outside_A3.txt" />
@@ -59,6 +65,7 @@
      <None Include="Assets\map\Graphics\Tilesets\Inside_C.txt" />
      <None Include="Assets\Customizable Skybox\Stylized Sky\Shaders\Stylized Sky.shader" />
      <None Include="Assets\map\Graphics\Tilesets\Dungeon_A4.txt" />
+     <None Include="Assets\Ninja Files\Read Me.txt" />
      <None Include="Assets\map\Graphics\Tilesets\Inside_A1.txt" />
      <None Include="Assets\map\Graphics\Tilesets\World_B.txt" />
      <None Include="Assets\map\Graphics\Tilesets\Outside_A4.txt" />
