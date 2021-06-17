@@ -34,6 +34,7 @@ public class Enemy : MonoBehaviour
     {
         rb = transform.GetChild(0).GetComponent<Rigidbody2D>();
         // anim = GetComponent<Animator>();
+
     }
     void Awake()
     {
