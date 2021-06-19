@@ -36,8 +36,52 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Bandits - Pixel Art\Demo\Bandit.cs" />
+     <Compile Include="Assets\Bandits - Pixel Art\Demo\Sensor_Bandit.cs" />
+     <Compile Include="Assets\Hero Knight - Pixel Art\ColorSwap\ColorSwap_HeroKnight.cs" />
+     <Compile Include="Assets\Hero Knight - Pixel Art\Demo\DestroyEvent_HeroKnight.cs" />
+     <Compile Include="Assets\Hero Knight - Pixel Art\Demo\HeroKnight.cs" />
+     <Compile Include="Assets\Hero Knight - Pixel Art\Demo\Sensor_HeroKnight.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
      <Compile Include="Assets\Wizard - 2D Character\Demo\WizDemo1.cs" />
+     <Compile Include="Assets\src\Archive.cs" />
      <Compile Include="Assets\src\Enemy.cs" />
+     <Compile Include="Assets\src\EnemyController.cs" />
+     <Compile Include="Assets\src\GlobalControl.cs" />
+     <Compile Include="Assets\src\Hash.cs" />
      <Compile Include="Assets\src\Jump.cs" />
      <Compile Include="Assets\src\Message.cs" />
      <Compile Include="Assets\src\Player.cs" />
@@ -46,31 +90,63 @@
      <Compile Include="Assets\src\face.cs" />
      <Compile Include="Assets\src\lookat.cs" />
      <Compile Include="Assets\src\menu.cs" />
+     <Compile Include="Assets\src\quit.cs" />
      <Compile Include="Assets\src\skip.cs" />
      <Compile Include="Assets\src\teleportGate.cs" />
-     <Compile Include="Assets\teleportGate2.cs" />
+     <Compile Include="Assets\src\teleportGate2.cs" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\map\Graphics\Tilesets\World_A2.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\map\Graphics\Tilesets\Inside_A4.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
      <None Include="Assets\map\Graphics\Tilesets\Outside_A3.txt" />
      <None Include="Assets\map\Graphics\Tilesets\Inside_A2.txt" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <None Include="Assets\map\Graphics\Tilesets\Outside_B.txt" />
      <None Include="Assets\map\Graphics\Tilesets\Dungeon_C.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\map\Graphics\Tilesets\Dungeon_A1.txt" />
      <None Include="Assets\map\Graphics\Tilesets\Inside_B.txt" />
      <None Include="Assets\map\Graphics\Tilesets\Dungeon_A5.txt" />
+     <None Include="Assets\2D Zombie\Shader\Spine-Skeleton.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\EVil Wizard\License.txt" />
      <None Include="Assets\map\Graphics\Tilesets\Dungeon_A2.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\2D Zombie\Spine2D Animations Exports\Zombie_Normal.atlas.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\2D Zombie\Unity Native Animations\Zombie_Normal.atlas.txt" />
      <None Include="Assets\map\Graphics\Tilesets\Inside_A5.txt" />
      <None Include="Assets\map\Graphics\Tilesets\World_A1.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\map\Graphics\Tilesets\Outside_A5.txt" />
      <None Include="Assets\map\Graphics\Tilesets\Inside_C.txt" />
      <None Include="Assets\Customizable Skybox\Stylized Sky\Shaders\Stylized Sky.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\map\Graphics\Tilesets\Dungeon_A4.txt" />
      <None Include="Assets\Ninja Files\Read Me.txt" />
      <None Include="Assets\map\Graphics\Tilesets\Inside_A1.txt" />
      <None Include="Assets\map\Graphics\Tilesets\World_B.txt" />
      <None Include="Assets\map\Graphics\Tilesets\Outside_A4.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\map\Graphics\Tilesets\Outside_A1.txt" />
+     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\2D Zombie\ReadMe.txt" />
+     <None Include="Assets\Resources\Json.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
      <None Include="Assets\map\Graphics\Tilesets\Outside_A2.txt" />
+     <None Include="Assets\Hero Knight - Pixel Art\ColorSwap\Sprites-ColorSwap.shader" />
      <None Include="Assets\map\Graphics\Tilesets\Dungeon_B.txt" />
      <None Include="Assets\map\Graphics\Tilesets\Outside_C.txt" />
     <Reference Include="UnityEngine">
@@ -255,6 +331,9 @@
     </Reference>
     <Reference Include="UnityEditor">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1c1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson">
+        <HintPath>E:/Unity project/Dungeons/Assets/LitJson.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
         <HintPath>E:/Unity project/Dungeons/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Editor.dll</HintPath>

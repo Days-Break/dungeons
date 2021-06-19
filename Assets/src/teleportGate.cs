@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class teleportGate : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -25,7 +26,6 @@ public class teleportGate : MonoBehaviour
 
         yield return new WaitForSeconds(0.6f); //等待6S后切换界面
         SceneManager.LoadScene("game2");//需要切换的界面
-
 
     }
 }

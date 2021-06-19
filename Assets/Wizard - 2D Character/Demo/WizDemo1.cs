@@ -30,6 +30,7 @@ namespace ClearSky
         {
             ResetAnimation();
             anim.SetTrigger("attack");
+
         }
         public void TripOver()
         {

@@ -33,7 +33,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         rb = transform.GetChild(0).GetComponent<Rigidbody2D>();
-        // anim = GetComponent<Animator>();
+        anim = transform.GetChild(0).GetComponent<Animator>();
 
     }
     void Awake()
@@ -44,7 +44,7 @@ public class Enemy : MonoBehaviour
             ATK = Random.Range(7, 9);
             DEF = Random.Range(3, 4);
             numberMax = 8;
-            attackspeed = 1.5f;
+            attackspeed = 1.2f;
         }
         else if (checkpoint == 2)
         {
@@ -52,7 +52,7 @@ public class Enemy : MonoBehaviour
             ATK = Random.Range(10, 20);
             DEF = Random.Range(7, 9);
             numberMax = 15;
-            attackspeed = 1f;
+            attackspeed = 0.8f;
         }
         else
         {
@@ -60,10 +60,10 @@ public class Enemy : MonoBehaviour
             ATK = Random.Range(30, 50);
             DEF = Random.Range(15, 25);
             numberMax = 30;
-            attackspeed = 0.7f;
+            attackspeed = 0.5f;
         }
         HP = HPMax;
-        Exp = HPMax / 2 + ATK * 2 + DEF;
+        Exp = (int)(HPMax / 2 + ATK * 2 + DEF);
         InvokeRepeating("Attack", 2, attackspeed);
         slider.value = 1;
         PC.PlayerAttack += Hurt;
@@ -102,7 +102,8 @@ public class Enemy : MonoBehaviour
         if (dist <= attackrange)
         {
             // EnemyAttack();
-            player.SendMessage("Hurt", Damage(PC.DEF));
+            player.SendMessage("Hurt", (int)Damage((float)PC.DEF));
+            anim.SetTrigger("attack");
             Debug.Log("敌人发起攻击");
         }
     }
@@ -111,7 +112,8 @@ public class Enemy : MonoBehaviour
         float dist = Vector3.Distance(player.transform.position, transform.position);
         if (dist < PC.attackrange)
         {
-            HP -= PC.Damage(DEF);
+            anim.SetTrigger("hurt");
+            HP -= (float)PC.Damage((float)DEF);
             if (HP <= 0)
             {
                 Die();
@@ -127,12 +129,14 @@ public class Enemy : MonoBehaviour
     }
     void Die()
     {
+        anim.SetTrigger("death");
         Debug.Log("敌人被消灭了");
-        CancelInvoke();
         PC.PlayerAttack -= Hurt;
+        CancelInvoke();
         // EnemyDied();
-        player.SendMessage("AddEXP", Exp);
-        Destroy(slider);
-        Destroy(transform.GetChild(0));
+        player.SendMessage("AddEXP", (int)Exp);
+        Debug.Log(Exp);
+        Destroy(transform.GetChild(1).gameObject);
+        Destroy(transform.GetChild(0).gameObject);
     }
 }
